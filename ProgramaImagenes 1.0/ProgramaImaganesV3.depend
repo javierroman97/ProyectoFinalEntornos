@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1576055694 source:/home/superman/Escritorio/V3/ProgramaImaganesV3/funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1576055702 /home/superman/Escritorio/V3/ProgramaImaganesV3/funciones.h
+	<stdio.h>
+
+1576492052 source:/home/superman/Escritorio/V3/ProgramaImaganesV3/main.c
+	<stdio.h>
+	"funciones.h"
+	<string.h>
+	<stdlib.h>
+
+1576055131 source:/home/usuario/Desktop/V3/ProgramaImaganesV3/funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1576055421 /home/usuario/Desktop/V3/ProgramaImaganesV3/funciones.h
+	<stdio.h>
+
+1576055158 source:/home/usuario/Desktop/V3/ProgramaImaganesV3/main.c
+	<stdio.h>
+	"funciones.h"
+	<string.h>
+	<stdlib.h>
+
+1576055694 source:/home/superman/Escritorio/asd/V3/ProgramaImaganesV3/funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1576055702 /home/superman/Escritorio/asd/V3/ProgramaImaganesV3/funciones.h
+	<stdio.h>
+
+1576492052 source:/home/superman/Escritorio/asd/V3/ProgramaImaganesV3/main.c
+	<stdio.h>
+	"funciones.h"
+	<string.h>
+	<stdlib.h>
+
+1576502232 source:/home/usuario/Escritorio/ProgramaImaganesV3/main.c
+	<stdio.h>
+	"funciones.h"
+	<string.h>
+	<stdlib.h>
+
+1576501971 /home/usuario/Escritorio/ProgramaImaganesV3/funciones.h
+	<stdio.h>
+
+1576503782 source:/home/usuario/Escritorio/ProgramaImaganesV3/funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1579348243 source:c:\users\usuario\desktop\programaimagenes\versión comentada\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1579343239 c:\users\usuario\desktop\programaimagenes\versión comentada\funciones.h
+	<stdio.h>
+
+1579349765 source:c:\users\usuario\desktop\programaimagenes\versión comentada\main.c
+	<stdio.h>
+	"funciones.h"
+	<string.h>
+	<stdlib.h>
+
