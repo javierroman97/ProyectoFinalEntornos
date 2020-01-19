@@ -12,6 +12,7 @@ struct Img
 FILE* leer(char* nombreArchivo);
 FILE* escribir(char* nombreArchivo);
 void limpiarpantalla(char *OS);
+void GuardarImagenes(struct Img, char* p1, int f_m, int c_m, int total);
 
 
 #endif //IMAGENES_LION_FUNCIONES_H

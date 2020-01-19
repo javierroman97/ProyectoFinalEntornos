@@ -103,4 +103,23 @@ int main()
     fprintf(res.f, "%d \n", img.g);
 
 
+
+    //Calculamos el total qe nos hará falta para la funcion GuardarImagenes
+    total= img.ncols*img.nfilas;
+
+
+    //Esta función lee el archivo de img y lo guarda en una matriz y cierra el archivo de img
+    GuardarImagenes(img,p1,f_m,c_m,total);
+
+
+    if(img.f==NULL)
+    {
+        printf("Problema de cerrar el fichero");
+        exit(-1);
+    }
+
+    fclose(img.f);
+    fclose(res.f);
+
+    return 0;
 }
