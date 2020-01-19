@@ -36,6 +36,23 @@ int main()
     }
     limpiarpantalla(OS);
 
+     //img.f y res.f hacen referencia a los archivos de cada struct, por tanto le decimos que el archivo de img lo vamos a leer y se llama pepper.ascii.pgm
+    strcpy(ubicacion,"pepper.ascii.pgm");
+    img.f=leer(ubicacion);
+    //aquí hacemos lo mismo pero en vez de leer, lo que queremos es escribir, por tanto me he hecho otra funcioncilla que se llama escribir
+    strcpy(ubicacion,"resultado.pgm");
+    res.f = escribir(ubicacion);
+
+    //Comprobamos que le hemos asignado bien el archivo
+    if (img.f == NULL)
+    {
+        printf("No se pudo abrir el archivo de origen");
+    }
+    if (img.f == NULL)
+    {
+        printf("No se pudo abrir el archivo de resultado");
+    }
+
 
     return 0;
 }

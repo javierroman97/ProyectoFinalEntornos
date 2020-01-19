@@ -9,6 +9,8 @@ struct Img
     FILE* f; //fichero en disco asociado
     int g;
 };
+FILE* leer(char* nombreArchivo);
+FILE* escribir(char* nombreArchivo);
 void limpiarpantalla(char *OS);
 
 #endif //IMAGENES_LION_FUNCIONES_H

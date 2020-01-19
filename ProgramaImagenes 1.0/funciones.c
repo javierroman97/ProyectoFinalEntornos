@@ -3,6 +3,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+FILE* leer(char* nombreArchivo)
+{
+    return fopen(nombreArchivo, "r");
+}
+
+FILE* escribir(char* nombreArchivo)
+{
+    return fopen(nombreArchivo, "w");
+}
+
 void limpiarpantalla(char *OS)
 {
     if(strcmp(OS,"Linux")==0)
