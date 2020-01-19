@@ -24,3 +24,4 @@ void limpiarpantalla(char *OS)
         system("cls");
     }
 }
+
