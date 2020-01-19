@@ -74,17 +74,17 @@
 	<string.h>
 	<stdlib.h>
 
-1579372564 source:c:\users\usuario\desktop\programaimagenes\programaimagenes 3.0\funciones.c
+1579373054 source:c:\users\usuario\desktop\programaimagenes\programaimagenes 5.0\funciones.c
 	"funciones.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1579372536 c:\users\usuario\desktop\programaimagenes\programaimagenes 3.0\funciones.h
+1579373029 c:\users\usuario\desktop\programaimagenes\programaimagenes 5.0\funciones.h
 	<stdio.h>
 	<stdlib.h>
 
-1579372605 source:c:\users\usuario\desktop\programaimagenes\programaimagenes 3.0\main.c
+1579373007 source:c:\users\usuario\desktop\programaimagenes\programaimagenes 5.0\main.c
 	<stdio.h>
 	"funciones.h"
 	<string.h>

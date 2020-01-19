@@ -12,6 +12,36 @@ FILE* escribir(char* nombreArchivo)
 {
     return fopen(nombreArchivo, "w");
 }
+
+int rellenar(struct Img img,int x,int y,int x2,int y2, int g)
+{
+    printf("Ha seleccionado usted la herramienta rellenar\n");
+    printf("A continuacion escriba el nivel de gris con el que desea rellenar la imagen\n");
+    scanf("%d", &g);
+    printf("A continuacion escriba las coordenadas que quiere rellenar del valor de gris (x, y)\n");
+    printf("Coordenada 1: ");
+    scanf("%d %d", &x,&y);
+    printf("\nCoordenada 2: ");
+    scanf("%d %d",&x2,&y2);
+
+    for(int i = y; i < y2; i++)
+    {
+        for(int j = x; j < x2; j++)
+        {
+            img.valores[i][j]=g;
+        }
+    }
+    if((img.valores[y+1][x+1] == g) && img.valores[y2-1][x2-1] == g)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+
+}
+
 void limpiarpantalla(char *OS)
 {
     if(strcmp(OS,"Linux")==0)

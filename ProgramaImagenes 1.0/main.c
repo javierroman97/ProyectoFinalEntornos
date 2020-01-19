@@ -118,6 +118,46 @@ int main()
         exit(-1);
     }
 
+    //Esto es otro menú para acceder a las distintas funciones para hacer firinguncias con la imagen
+    while (variableSwitch < 1 || variableSwitch>4)
+    {
+        printf("Introduzca 1 para rellenar\nIntroduzca 2 para colocar marco\nIntroduzca 3 para aumentar brillo\nIntroduzca 4 para copiar la imagen\n");
+
+        scanf("%d", &variableSwitch);
+    }
+
+    limpiarpantalla(OS);
+
+
+    switch (variableSwitch)
+    {
+    case 1:
+        //rellenar permite cambiar los valores de gris de un cuadrado que esté dentro de la imagen dados dos puntos a(x,y) y b(x2,y2)
+        //en el if comprobamos si funciona rellenar o no
+        if(rellenar(img,x,y,x2,y2,gRelleno)==0)
+        {
+            printf("Imagen rellenada");
+        }
+        else
+        {
+            printf("Imagen no rellenada");
+        }
+
+
+
+
+
+        break;
+    case 2:
+        break;
+    case 3:
+        break;
+    case 4:
+        break;
+    }
+
+
+
     fclose(img.f);
     fclose(res.f);
 
