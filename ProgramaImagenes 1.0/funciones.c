@@ -97,6 +97,50 @@ void crearMarco(struct Img img,int grosor,int g)
 }
 
 
+void incrementarBrillo(struct Img img)
+{
+    int porcentaje=0;
+    int sumagris=0;
+    printf("Ha seleccionado la herramienta de incrementar brillo, a continuación escriba el porcentaje de incremento\n");
+    scanf("%d",&porcentaje);
+    if(porcentaje>100)
+    {
+        porcentaje=100;
+    }
+    if(porcentaje<-100)
+    {
+        porcentaje=-100;
+    }
+    sumagris=(img.g*(porcentaje/100.0));
+    for(int i = 0; i < img.ncols; i++)
+    {
+        for(int j = 0; j< img.nfilas; j++)
+        {
+
+            img.valores[i][j]+=sumagris;
+            if(img.valores[i][j]>img.g)
+            {
+                img.valores[i][j]=img.g;
+            }
+        }
+    }
+
+}
+
+void copiar(struct Img res, struct Img img)
+{
+    for(int i=0; i<img.nfilas; i++)
+    {
+        for(int j=0; j<img.ncols; j++)
+        {
+            fprintf(res.f, "%d ", img.valores[j][i]);
+        }
+        fprintf(res.f," \n");
+    }
+    {
+
+    }
+}
 
 void GuardarImagenes(struct Img img, char* p1, int f_m, int c_m, int total)
 {

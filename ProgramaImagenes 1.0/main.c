@@ -154,8 +154,18 @@ int main()
         printf("Marco puesto");
         break;
     case 3:
+        //Incrementa el brillo de la imagen lo que quiera el usuario
+        incrementarBrillo(img);
+        printf("Brillo incrementado, saliendo del programa");
         break;
     case 4:
+        //copiar copia la matriz de imagen en el archivo del ressultado
+        copiar(res, img);
+        //fclose cierra los ficheros
+        fclose(img.f);
+        fclose(res.f);
+        printf("Imagen copiada");
+        exit(-1);
         break;
     }
 
