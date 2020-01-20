@@ -149,6 +149,9 @@ int main()
 
         break;
     case 2:
+        //crearMarco como su propio nombre indica, creamos un marco alrededor de la imagen del grosor que nosotros queramos y del color que nosotros queramos también
+        crearMarco(img,grosor,g);
+        printf("Marco puesto");
         break;
     case 3:
         break;
@@ -157,6 +160,15 @@ int main()
     }
 
 
+    //En este ultimo for anidado escribimos la matriz img, donde hemos realizado todas las funciones anteriores y las escribe en el fichero del resultado
+    for(int i=0; i<img.nfilas; i++)
+    {
+        for(int j=0; j<img.ncols; j++)
+        {
+            fprintf(res.f, "%d ", img.valores[j][i]);
+        }
+        fprintf(res.f," \n");
+    }
 
     fclose(img.f);
     fclose(res.f);

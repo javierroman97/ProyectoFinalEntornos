@@ -54,6 +54,50 @@ void limpiarpantalla(char *OS)
     }
 }
 
+void crearMarco(struct Img img,int grosor,int g)
+{
+
+    printf("Ha seleccionado la opción crear marco, a continuación escriba el grosor\n");
+    scanf("%d",&grosor);
+    printf("A continuación escriba el nivel de gris:\n");
+    scanf("%d",&g);
+    //se rellenan las primeras filas
+    for(int i = 0; i < grosor; i++)
+    {
+        for(int j = 0; j <img.nfilas; j++)
+        {
+            img.valores[i][j]=g;
+        }
+    }
+    for(int i = 0; i<img.ncols; i++)
+    {
+        for(int j = 0; j<img.nfilas; j++)
+        {
+            if(j<grosor)
+            {
+                img.valores[i][j]=g;
+            }
+            if(j>(img.nfilas-grosor))
+            {
+                img.valores[i][j]=g;
+            }
+        }
+    }
+
+    for(int i = 0; i<img.ncols; i++)
+    {
+        for(int j = 0; j<img.nfilas; j++)
+        {
+            if(i>(img.ncols-grosor))
+            {
+                img.valores[i][j]=g;
+            }
+        }
+    }
+}
+
+
+
 void GuardarImagenes(struct Img img, char* p1, int f_m, int c_m, int total)
 {
     while(total>0)
